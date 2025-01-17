@@ -12,7 +12,7 @@ import utilities.ExcelUtilities;
 
 public class ManageNewsTest extends Base {
 
-	@Test
+	@Test(groups = {"regression"})
 	public void newsTest() throws IOException {
 		
 		String username = ExcelUtilities.readStringData(1, 0, "LoginData");
